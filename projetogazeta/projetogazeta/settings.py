@@ -7,20 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-#BOT_NAME = 'projetogazeta'
+BOT_NAME = 'projetogazeta'
 
 SPIDER_MODULES = ['projetogazeta.spiders']
 NEWSPIDER_MODULE = 'projetogazeta.spiders'
-
-USER_AGENT = 'Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0'
-URLLENGTH_LIMIT=5000000
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'projetogazeta (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
